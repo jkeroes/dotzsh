@@ -85,7 +85,7 @@ if zstyle -t ':dotzsh:module:environment:grep' color; then
   elif (( ${#_theme_grepcolors} > 0  )); then
     export GREP_COLOR="$_theme_grepcolors"
   fi
-  export GREP_OPTIONS='--color=auto'
+  alias grep='grep --color=auto'
 fi
 
 if zstyle -t ':dotzsh:module:completion' loaded; then

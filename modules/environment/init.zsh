@@ -55,7 +55,7 @@ unsetopt CHECK_JOBS       # Don't report on jobs when shell exit.
 
 # Grep
 if zstyle -t ':dotzsh:module:environment:grep' color; then
-  export GREP_OPTIONS='--color=auto'
+  alias grep='grep --color=auto'
 fi
 
 # Set the PAGER
